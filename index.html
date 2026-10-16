@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>श्रीमद्भगवद्गीता - अध्याय १२ (भक्तियोग) | Gita Shorts</title>
+  <meta name="description" content="Experience all 20 Sanskrit shlokas of Bhagavad Gita Chapter 12 (Bhakti Yoga) in an immersive YouTube Shorts / Instagram Reels full-screen feed with synchronized recitation.">
+  <meta name="theme-color" content="#0f0f11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="reels-app-container">
+    <!-- Desktop quick jump list on the left side -->
+    <nav class="desktop-jump-panel" id="desktop-jump-panel" aria-label="Shloka Selector"></nav>
+
+    <!-- Vertical Snap-Scrolling Feed Container -->
+    <main class="reels-feed" id="reels-feed" role="feed" aria-label="Gita Shorts Feed">
+      <!-- 20 Shloka Reel slides are dynamically created by app.js -->
+    </main>
+
+    <!-- Desktop Up / Down Arrow Navigation on the right side -->
+    <nav class="desktop-nav-panel" aria-label="Shorts Navigation">
+      <button class="btn-nav-arrow" id="btn-prev-reel" title="Previous Shloka (Up Arrow)" aria-label="Previous Shloka">↑</button>
+      <button class="btn-nav-arrow" id="btn-next-reel" title="Next Shloka (Down Arrow)" aria-label="Next Shloka">↓</button>
+    </nav>
+  </div>
+
+  <!-- Bottom Drawer for Shloka Meaning / Explanation (Optional Sheet) -->
+  <div class="info-drawer-backdrop" id="info-drawer-backdrop"></div>
+  <aside class="info-drawer" id="info-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="drawer-drag-pill"></div>
+    <div class="drawer-header">
+      <h3 class="drawer-title" id="drawer-title">श्लोक विवरण</h3>
+      <button class="btn-drawer-close" id="btn-drawer-close" aria-label="Close details">✕</button>
+    </div>
+    <div class="drawer-body" id="drawer-body">
+      <!-- Content populated on click of book icon -->
+    </div>
+  </aside>
+
+  <!-- Interactive Floating Toast Messages -->
+  <div class="toast-msg" id="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- App Data & Logic Scripts -->
+  <script src="gita_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
